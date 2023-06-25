@@ -1,4 +1,5 @@
 ---
+import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -11,13 +12,10 @@ import Layout from '../layouts/Layout.astro';
 
 		<img src="miyo2.png" alt="Este soy yo" class="lg:w-[25%] md:w-full max-[320px]:w-[1000px] w-30rem absolute bottom-0">
 	</section>
-	<section class="bg-[#f7fafa] w-full h-screen relative flex justify-center">
-		<div class="text-center pt-64 h-full">
-			<p class="font-montserrat font-bold text-[#ffa618] [text-shadow:_4px_4px_0_rgb(164_37_23)] text-7xl">Vicente Monsalve Gómez</p>
-			<p class="font-montserrat font-bold text-[#ffa618] [text-shadow:_2px_2px_0_rgb(164_37_23)] text-3xl">Full Stack developer</p>
-		</div>
-
-		<img src="miyo2.png" alt="Este soy yo" class="lg:w-[15%] md:w-[10%] min-[320px]:w-[5%] w-30rem absolute bottom-0">
+	<section class="bg-[#4dc6c3] w-full h-screen relative flex justify-center">
+		<Card>
+			Hola
+		</Card>
 	</section>
 </Layout>
 
