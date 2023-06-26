@@ -1,15 +1,13 @@
 ---
-// export interface Props {
-// 	title: string;
-// 	body: string;
-// 	href: string;
-// }
+export interface Props {
+	background: string;
+}
 
-// const { href, title, body } = Astro.props;
+const {background} = Astro.props;
 ---
 
 <span class="tecnologia bg-white rounded-lg w-[10rem] h-[10rem]">
-	<div>
+	<div class=`bg-[url('${background}')] bg-center bg-no-repeat`>
 		<slot />
 	</div>
 </span>
