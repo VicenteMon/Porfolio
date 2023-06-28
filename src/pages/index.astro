@@ -4,23 +4,39 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Vicente Monsalve Gómez">
-	<section class="bg-[#4dc6c3] w-full  h-[93vh] relative flex justify-center lg:h-screen md:h-[84vh]">
+	<section class="bg-[#4dc6c3] w-full  h-[93vh] relative flex justify-center lg:h-screen md:h-[84vh] z-[-10]">
 		<div class="text-center pt-40 h-full lg:pt-64 md:pt-10">
-			<p class="font-bold text-[#ffa618] [text-shadow:_5px_3px_0_rgb(164_37_23)] lg:text-7xl md:text-6xl text-7xl">Vicente Monsalve Gómez</p>
-			<p class="font-extrabold text-[#ffa618] [text-shadow:_4px_2px_0_rgb(164_37_23)] lg:text-3xl md:text-2xl text-3xl pt-8">Full Stack developer</p>
+			<p class="font-bold text-[#ffa618] [text-shadow:_5px_3px_0_rgb(164_37_23)] lg:text-7xl md:text-6xl text-7xl">"Vicente Monsalve Gómez"</p>
+			<p class="font-extrabold text-[#ffa618] [text-shadow:_4px_2px_0_rgb(164_37_23)] lg:text-3xl md:text-2xl text-3xl pt-8">A Full Stack Developer</p>
 		</div>
 
 		<img src="miyo2.png" alt="Este soy yo" class="lg:w-[25%] md:w-[17%] w-[55%] w-30rem absolute bottom-0 animate-up">
 	</section>
 
-	<section class="bg-[#4dc6c3] w-full h-screen relative">
-		<div>
-			<h1 class="text-2xl font-extrabold">Proyectos </h1>
-			<div class="bg-slate-500 w-full h-full flex justify-around flex-row flex-wrap">
-				<Card background="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"/>
+	<section class="bg-[#4dc6c3] w-full h-auto relative py-16">
+		<div class="">
+			<h1 class="text-4xl font-extrabold lg:px-40 md:px-30 px-10">Skills:</h1>
+			<div class="w-full h-full flex md:justify-center justify-center flex-row flex-wrap md:gap-12 gap-8 lg:px-40 md:px-30 px-0 pt-16">
+				<Card background="ico/javascript_logo.svg"/>
+				<Card background="ico/html_logo.svg"/>
+				<Card background="ico/css_logo.svg"/>
+				<Card background="ico/astro_logo.svg"/>
+				<Card background="ico/laravel_logo.svg"/>
+				<Card background="ico/mariadb_logo.svg"/>
+				<Card background="ico/tailwind_logo.svg"/>
+				<Card background="ico/php_logo.svg"/>
+				<Card background="ico/git_logo.svg"/>
+				<Card background="ico/java_logo.svg"/>
+				<Card background="">
+					<span class=" font-bold">En progreso...</span>
+				</Card>
 			</div>
 		</div>
 
+	</section>
+	<section class="bg-[#4dc6c3] w-full  h-[93vh] relative flex justify-center lg:h-screen md:h-[84vh] z-[-10]">
+		<h1 class="text-4xl font-extrabold lg:px-40 md:px-30 px-10">Proyectos:</h1>
+		
 	</section>
 </Layout>
 
@@ -42,3 +58,6 @@ import Layout from '../layouts/Layout.astro';
 
 	.animate-up{ animation-name: animate-up; animation-duration: 1s; animation-timing-function: linear;}
 </style>
+
+
+<!-- https://ar.pinterest.com/pin/797911258970794949/ -->

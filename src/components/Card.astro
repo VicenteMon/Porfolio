@@ -6,8 +6,8 @@ export interface Props {
 const {background} = Astro.props;
 ---
 
-<span class="tecnologia bg-white rounded-lg w-[10rem] h-[10rem]">
-	<div class=`bg-[url('${background}')] bg-center bg-no-repeat`>
-		<slot />
+<span class=`tecnologia bg-white rounded-lg w-[6rem] h-[6rem] flex justify-center items-center shadow-lg`>
+	<div class=`bg-cover bg-center h-[80%] w-[80%] rounded-lg` style=`background-image: url('${background}');`>
+		<slot/>
 	</div>
 </span>
