@@ -1,12 +1,23 @@
 ---
 export interface Props {
     portada: string,
-    link: string
+    link: string,
+    titulo: string,
+    descripcion: string
 }
 
-const {portada, link} = Astro.props;
+const {portada, link, titulo, descripcion} = Astro.props;
 ---
 
-<span>
-    
-</span>
+<a href={link} class="w-[30rem] h-64 bg-white bg-cover rounded-md block shadow-lg" style=`background-image: url(proyectos/${portada});`>
+    <div class="group bg-slate-700 flex items-end p-2 gap-3 flex-wrap w-full h-[60%] bg-opacity-0 lg:hover:bg-opacity-70 lg:hover:transition ease-in-out duration-300 rounded-t-md">
+
+        <slot name="tenologias"/>
+
+    </div>
+
+    <div class="bg-white w-full h-[40%] rounded-b-md px-8 pt-4">
+        <h1 class="font-bold text-xl">{titulo}</h1>
+        <p>{descripcion}</p>
+    </div>
+</a>
