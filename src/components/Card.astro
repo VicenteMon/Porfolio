@@ -6,7 +6,7 @@ export interface Props {
 const {background} = Astro.props;
 ---
 
-<div class=`tecnologia bg-white rounded-lg w-[6rem] h-[6rem] flex justify-center items-center shadow-lg`>
+<div class=`tecnologia relative bg-white rounded-lg w-[6rem] h-[6rem] flex justify-center items-center shadow-lg hover:bottom-2 lg:hover:transition ease-in-out duration-200`>
 	<div class=`bg-cover bg-center h-[80%] w-[80%] rounded-lg` style=`background-image: url('ico/${background}');`>
 		<slot/>
 	</div>
