@@ -20,28 +20,14 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<section class="bg-[#4dc6c3] w-full h-auto relative py-16 z-10"> <!-- Esto hay que cambiarlo -->
-		<h1 class="text-4xl font-extrabold lg:px-40 md:px-30 px-10">Mi Stack:</h1>
-		<div class="w-full h-full flex md:justify-center justify-center flex-row flex-wrap md:gap-20 gap-8 lg:px-40 md:px-30 px-0 pt-16">
-			<Card background="javascript_logo.svg"/>
-			<Card background="html_logo.svg"/>
-			<Card background="css_logo.svg"/>
-			<Card background="astro_logo.svg"/>
-			<Card background="laravel_logo.svg"/>
-			<Card background="mariadb_logo.svg"/>
-			<Card background="tailwind_logo.svg"/>
-			<Card background="php_logo.svg"/>
-			<Card background="git_logo.svg"/>
-			<Card background="java_logo.svg"/>
-		</div>
-	</section>
-
-	<section class="bg-[#4dc6c3] w-full h-auto relative py-16 z-10"> <!-- Esto hay que cambiarlo -->
-		<h1 class="text-4xl font-extrabold lg:px-40 md:px-30 px-10">Sobre mi:</h1>
-		<div>
-			<p class="[&>span]:font-bold text-xl">
-				Soy <span>Desarrollador Web</span> recién titulado deseando adquirir nuevos conocimientos. Con experiencia en <span>Laravel</span> y <span>JavaScript</span>. Intentando mejorar un poquito más cada día.
-			</p>
-			<div class="w-full h-full flex md:justify-center justify-center flex-row flex-wrap md:gap-20 gap-8 lg:px-40 md:px-30 px-0 pt-16">
+		<div class="lg:flex lg:px-40 md:px-30">
+			<div class="flex flex-col">
+				<h1 class="text-4xl font-extrabold">Sobre mi:</h1>
+				<p class="[&>span]:font-bold [&>span]:text-white text-3xl pt-16 lg:text-justify text-center text-wrap lg:pr-10 px-4 text-black">
+					<span>Desarrollador Web</span> recién titulado deseando adquirir nuevos conocimientos. Con experiencia en <span>Laravel</span> y <span>JavaScript</span>. Intentando mejorar un poquito más cada día. 🙂
+				</p>
+			</div>
+			<div class="w-full h-full flex md:justify-center justify-center flex-row flex-wrap md:gap-10 gap-8 pt-16">
 				<Card background="javascript_logo.svg"/>
 				<Card background="html_logo.svg"/>
 				<Card background="css_logo.svg"/>
