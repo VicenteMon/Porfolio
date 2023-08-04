@@ -20,16 +20,20 @@ const { title } = Astro.props;
 		<slot />
 
 		<footer class="bg-[#dea426] text-white w-full h-[50vh]">
-			<div class="h-full mx-40 bg-slate-800">
-				<div>
-					<div><img src="/ico/twitter_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">@Vicennte_M</a></div>
-					<div><img src="/ico/instagram_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">vicente_03</a></div>
-					<div><img src="/ico/github_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">VicenteMon</a></div>
-					<div><img src="/ico/linkedin_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">Vicente Monsalve Gómez</a></div>
+			<div class="h-full mx-40 flex flex-row">
+				<div class="w-full flex flex-col items-center justify-center">
+					<div class="[&>div>a]:text-black [&>div>a]:font-bold">
+						<div><img src="/ico/twitter_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">@Vicennte_M</a></div>
+						<div><img src="/ico/instagram_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">vicente_03</a></div>
+						<div><img src="/ico/github_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">VicenteMon</a></div>
+						<div><img src="/ico/linkedin_logo.svg" alt="" class="h-auto w-10 inline"> <a href="#">Vicente Monsalve Gómez</a></div>
+					</div>
 				</div>
-				<div>
-					<span>Contacto:</span>
-					<span><a href="vicentemonsalvegomez@gmail.com">vicentemonsalvegomez@gmail.com</a></span>
+				<div class="w-full flex justify-center items-center">
+					<div>
+						<span class="text-3xl text-black font-bold">Contacto:</span> <br>
+						<span><a href="mailto:vicentemonsalvegomez@gmail.com" class="text-4xl text-black font-bold">vicentemonsalvegomez@gmail.com</a></span>
+					</div>
 				</div>
 			</div>
 		</footer>
